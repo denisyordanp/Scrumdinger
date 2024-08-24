@@ -35,4 +35,8 @@ enum Theme : String {
     var mainColor: Color {
         Color(rawValue)
     }
+    
+    var name: String {
+        String(rawValue.dropFirst(6)).capitalized
+    }
 }
