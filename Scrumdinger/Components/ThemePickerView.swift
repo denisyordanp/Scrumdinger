@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ThemePicker: View {
+struct ThemePickerView: View {
     @Binding var selection: Theme
     
     var body: some View {
@@ -22,5 +22,5 @@ struct ThemePicker: View {
 }
 
 #Preview {
-    ThemePicker(selection: .constant(Theme.local_bubblegum))
+    ThemePickerView(selection: .constant(Theme.local_bubblegum))
 }
